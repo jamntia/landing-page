@@ -32,7 +32,7 @@
 						<nav>
 							<ul>
 								<li><a href="#about">About</a></li>
-								<li><a href="#work">Work</a></li>
+								<li><a href="#projects">Projects</a></li>
 								<li><a href="#intro">Intro</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
@@ -59,19 +59,96 @@
 									more comprehensive overview of my background and skills.</p>
 							</article>
 							
-							<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+							<!-- Projects -->
+							<article id="projects">
+								<h2 class="major">Projects</h2>
+								<span class="image main"><img src="images/CatagramLogo copy.png" alt="" /></span>
+								<h3>Here, I'll elaborate a little bit more on the projects on my resume.</h3>
+								<h3>Catagram</h3>
+								<p>
+									I wanted to start my summer off with a big project, and many people recommended 
+									that I clone a popular social media website. I went with Instagram, and despite 
+									countless road bumps, bugs, and other technical issues, I successfully made a 
+									full-stack web application that functions similarly to instagram.com. I used React.js 
+									for my front end and Google Firebase as my BaaS. 
+								</p>
+								<p>
+									Although this project was fun to do, to me the idea itself was kind of boring. I thought 
+									to myself, “Instagram already exists, so in terms of functionality, what good is a clone 
+									of it?” This is where I decided to add a little twist to my project. What if I coded Instagram, 
+									but made it so that you could only upload a photo if there is a cat somewhere in the image?
+								</p>
+								<p>
+									I spent some time learning about convolutional neural networks and how I could use them for 
+									object detection. I didn't want my neural network to be a “black box,” where I just give it 
+									an input and get an output without really understanding what happened in between. I studied 
+									topics like backpropagation, Fast Fourier Transforms, and gradient descent to get a grasp on 
+									how networks learn. The model I ended up creating utilizes YOLOv5 (YOLO standing for a “You 
+									Only Look Once” algorithm) to detect if there's a cat in a given image with a 97.8% accuracy!
+								</p>
+								<p>
+									I deployed this model and connected it to my web app. If an image passes the model's test, 
+									it will post. Or else, it will tell the user that the model couldn't detect any cats in 
+									the image.  The final result is something I like to call “Catagram!”
+								</p>
+								
+								
+								<h3>Speech.ai</h3>
+								<p>
+									Two of my friends and I formed a group and competed in Rutgers University's 24-hour hackathon 
+									"HackRU S24." We decided to compete under the track of "Best AI Application Built with CloudFlare."
+								</p>
+								<p>
+									Our inspiration stemmed from a common challenge: mastering public speaking. Personally, I have 
+									always struggled with my speech, enough to the point where I attended speech therapy in the past. 
+									Drawing from personal experiences and recognizing the widespread difficulty in this domain, we set 
+									out to develop a solution.
+								</p>
+								<p>
+									Our project records audio from the user and saves it as a .mp4 file. It then analyzes the recording 
+									using Cloudflare's APIs including Speech to Text, WorkersAI, and Sentiment Analysis. The speech is 
+									then critiqued based on the number of filler phrases used, the rate at which the user is talking, 
+									grammatical errors, and the tone that the speech gives off. Lastly, speech.ai returns a score 
+									ranging from 1-100 as well as why that score was given.
+								</p>
+								<p>
+									We competed amongst 300+ students at the hackathon, and ended up placing 1st in our track! Overall, 
+									it was a great learning experience, and I can't wait for my next hackathon. 
+								</p>
+
+
+								<h3>Stop and Frisk</h3>
+								<p>
+									New York has a law called “Stop-and-Frisk” that allows police officers to “stop, interrogate and
+									 search New York City citizens on the sole basis of reasonable suspicion.” I was born in the Bronx, 
+									 and I still have family that lives there, so this topic was close to home for me. The law has been
+									  subject to more than its fair share of controversy over the years, so I decided to analyze what 
+									  was going on.
+								</p>
+								<p>
+									I got 4 datasets that describe every reported arrest NYPD made under the Stop and Frisk law from 
+									2013, 2014, 2021, and 2022. I queried each dataset with Java (had I known Python or R at the time, 
+									I probably would've used one of them instead) and tried to find common trends. Luckily, my dataset 
+									included the demographics of each person who was arrested, including race, gender, weight, and age.
+								</p>
+								<p>
+									I got some pretty interesting results; for example, I found that people of color were arrested at 
+									a much higher rate than other demographics. I also noticed that younger people are more likely to 
+									be stopped than older people.
+								</p>
+								<p>
+									This project was the first time I've ever worked with analyzing a dataset, and it forced me to 
+									learn new search algorithms to optimize my code. In fact, this project is what got me interested
+									 in the field of data science, and I'm glad I did it. Not only did I learn new tricks in the realm 
+									 of computer science, but I also got to apply them to a modern issue that affects people I care about.
+								</p>
 								</article>
 								
 								<!-- Intro -->
 									<article id="intro">
 										<h2 class="major">Intro</h2>
 										<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-										<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
+										<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#projects">awesome work</a>.</p>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
 									</article>
 
