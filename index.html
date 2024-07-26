@@ -5,219 +5,239 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Dimension by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+	<title>Dimension by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-BS1JWPEF4N"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-gem"></span>
+		gtag('config', 'G-BS1JWPEF4N');
+	</script>
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="logo">
+				<span class="icon fa-gem"></span>
+			</div>
+			<div class="content">
+				<div class="inner">
+					<h1><a href="https://linkedin.co/in/james-ntiamoah" target="_blank">James Ntiamoah</a></h1>
+					<p>I am a Sophomore at Rutgers University studying Computer Science and Mathematics
+						looking to gain experience in the industry.</p>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#thoughts">Thoughts</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<!--<li><a href="#elements">Elements</a></li>-->
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- About -->
+			<article id="about">
+				<h2 class="major">About</h2>
+				<span class="image main"><img src="images/Rutgers_Business_School.jpg" alt="" /></span>
+				<p>I entered college as a computer science with the sole intent of becoming a software engineer
+					but that changed as I started to learn more about different industries. Nowadays, my main goal
+					is to become a quantitative trader, but I'm still open to other roles like software engineering
+					and machine learning/artificial intelligence.</p>
+				<p>Right now, my interests include the math behind financial equilibriums, convolutional neural
+					networks,
+					and advanced problem-solving algorithms. More specifically, I spend my free time researching
+					either different ways to price complex financial instruments, or how to improve the object-detection
+					model I'm working on.</p>
+				<p>Here's a copy of my <a href="documents/James.Ntiamoah copy.pdf" target="_blank">resume</a> for a
+					more comprehensive overview of my background and skills.</p>
+			</article>
+
+			<!-- Projects -->
+			<article id="projects">
+				<h2 class="major">Projects</h2>
+				<span class="image main"><img src="images/CatagramLogo copy.png" alt="" /></span>
+				<h3>Here, I'll elaborate a little bit more on the projects on my resume.</h3>
+				<h3>Catagram</h3>
+				<p>
+					I wanted to start my summer off with a big project, and many people recommended
+					that I clone a popular social media website. I went with Instagram, and despite
+					countless road bumps, bugs, and other technical issues, I successfully made a
+					full-stack web application that functions similarly to instagram.com. I used React.js
+					for my front end and Google Firebase as my BaaS.
+				</p>
+				<p>
+					Although this project was fun to do, to me the idea itself was kind of boring. I thought
+					to myself, “Instagram already exists, so in terms of functionality, what good is a clone
+					of it?” This is where I decided to add a little twist to my project. What if I coded Instagram,
+					but made it so that you could only upload a photo if there is a cat somewhere in the image?
+				</p>
+				<p>
+					I spent some time learning about convolutional neural networks and how I could use them for
+					object detection. I didn't want my neural network to be a “black box,” where I just give it
+					an input and get an output without really understanding what happened in between. I studied
+					topics like backpropagation, Fast Fourier Transforms, and gradient descent to get a grasp on
+					how networks learn. The model I ended up creating utilizes YOLOv5 (YOLO standing for a “You
+					Only Look Once” algorithm) to detect if there's a cat in a given image with a 97.8% accuracy!
+				</p>
+				<p>
+					I deployed this model and connected it to my web app. If an image passes the model's test,
+					it will post. Or else, it will tell the user that the model couldn't detect any cats in
+					the image. The final result is something I like to call “Catagram!”
+				</p>
+
+
+				<h3>Speech.ai</h3>
+				<p>
+					Two of my friends and I formed a group and competed in Rutgers University's 24-hour hackathon
+					"HackRU S24." We decided to compete under the track of "Best AI Application Built with CloudFlare."
+				</p>
+				<p>
+					Our inspiration stemmed from a common challenge: mastering public speaking. Personally, I have
+					always struggled with my speech, enough to the point where I attended speech therapy in the past.
+					Drawing from personal experiences and recognizing the widespread difficulty in this domain, we set
+					out to develop a solution.
+				</p>
+				<p>
+					Our project records audio from the user and saves it as a .mp4 file. It then analyzes the recording
+					using Cloudflare's APIs including Speech to Text, WorkersAI, and Sentiment Analysis. The speech is
+					then critiqued based on the number of filler phrases used, the rate at which the user is talking,
+					grammatical errors, and the tone that the speech gives off. Lastly, speech.ai returns a score
+					ranging from 1-100 as well as why that score was given.
+				</p>
+				<p>
+					We competed amongst 300+ students at the hackathon, and ended up placing 1st in our track! Overall,
+					it was a great learning experience, and I can't wait for my next hackathon.
+				</p>
+
+
+				<h3>Stop and Frisk</h3>
+				<p>
+					New York has a law called “Stop-and-Frisk” that allows police officers to “stop, interrogate and
+					search New York City citizens on the sole basis of reasonable suspicion.” I was born in the Bronx,
+					and I still have family that lives there, so this topic was close to home for me. The law has been
+					subject to more than its fair share of controversy over the years, so I decided to analyze what
+					was going on.
+				</p>
+				<p>
+					I got 4 datasets that describe every reported arrest NYPD made under the Stop and Frisk law from
+					2013, 2014, 2021, and 2022. I queried each dataset with Java (had I known Python or R at the time,
+					I probably would've used one of them instead) and tried to find common trends. Luckily, my dataset
+					included the demographics of each person who was arrested, including race, gender, weight, and age.
+				</p>
+				<p>
+					I got some pretty interesting results; for example, I found that people of color were arrested at
+					a much higher rate than other demographics. I also noticed that younger people are more likely to
+					be stopped than older people.
+				</p>
+				<p>
+					This project was the first time I've ever worked with analyzing a dataset, and it forced me to
+					learn new search algorithms to optimize my code. In fact, this project is what got me interested
+					in the field of data science, and I'm glad I did it. Not only did I learn new tricks in the realm
+					of computer science, but I also got to apply them to a modern issue that affects people I care
+					about.
+				</p>
+			</article>
+
+			<!-- Thoughts -->
+			<article id="thoughts">
+				<h2 class="major">Thoughts</h2>
+				<span class="image main"><img src="images/Socrates_Thinking.jpg" alt="" /></span>
+				<h3>Why Math?</h3>
+				<p>
+					Growing up, I always loved math, but I never really considered it as a major;
+					I was deadset on computer science. Even during the first semester of my freshman year,
+					I remember thinking to myself that I was going to try and complete all of my math requirements
+					as soon as possible so that I could be done with it.
+				</p>
+				<p>
+					I tried to look back and figure out the exact moment I fell in love with higher-level
+					mathematics, but I can't seem to find the turning point. My guess is that it was somewhere
+					around late March when linear algebra clicked in my head. Up until that point, I was able
+					to do all the homework and score well on my assessments, but I didn't really understand
+					what I was doing in the grand scheme of things. I remember coming across one of 3Blue1Brown's
+					videos on linear algebra, and the visuals made everything fall into place. So, I guess I decided
+					to also pursue a mathematics degree when I understood what linear algebra was.
+				</p>
+				<p>
+					If you were to ask me in person, “Why are you a math major?”, I'd probably say something like
+					“I don't know. It's cool, math is really nice.” In reality, my career goals can be mostly
+					summed up in one sentence: I want to do cool things with cool people. In my opinion,
+					learning the language that is math will help achieve that goal, as you can do some pretty cool
+					things with math.
+				</p>
+			</article>
+
+			<!-- Contact -->
+			<article id="contact">
+				<h2 class="major">Contact</h2>
+				<form method="post" action="#">
+					<div class="fields">
+						<div class="field half">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" />
 						</div>
-						<div class="content">
-							<div class="inner">
-								<h1><a href="https://linkedin.co/in/james-ntiamoah" target="_blank">James Ntiamoah</a></h1>
-								<p>I am a Sophomore at Rutgers University studying Computer Science and Mathematics 
-									looking to gain experience in the industry.</p>
-							</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" />
 						</div>
-						<nav>
-							<ul>
-								<li><a href="#about">About</a></li>
-								<li><a href="#projects">Projects</a></li>
-								<li><a href="#thoughts">Thoughts</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="4"></textarea>
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Send Message" class="primary" /></li>
+						<li><input type="reset" value="Reset" /></li>
+					</ul>
+				</form>
+			</article>
 
-				<!-- Main -->
-					<div id="main">
+			<!-- Elements -->
+			<article id="elements">
+				<h2 class="major">Elements</h2>
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/Rutgers_Business_School.jpg" alt="" /></span>
-								<p>I entered college as a computer science with the sole intent of becoming a software engineer 
-									but that changed as I started to learn more about different industries. Nowadays, my main goal 
-									is to become a quantitative trader, but I'm still open to other roles like software engineering
-									 and machine learning/artificial intelligence.</p>
-								<p>Right now, my interests include the math behind financial equilibriums, convolutional neural networks, 
-									and advanced problem-solving algorithms. More specifically, I spend my free time researching 
-									either different ways to price complex financial instruments, or how to improve the object-detection
-									 model I'm working on.</p>
-								<p>Here's a copy of my <a href="documents/James.Ntiamoah copy.pdf" target="_blank">resume</a> for a 
-									more comprehensive overview of my background and skills.</p>
-							</article>
-							
-							<!-- Projects -->
-							<article id="projects">
-								<h2 class="major">Projects</h2>
-								<span class="image main"><img src="images/CatagramLogo copy.png" alt="" /></span>
-								<h3>Here, I'll elaborate a little bit more on the projects on my resume.</h3>
-								<h3>Catagram</h3>
-								<p>
-									I wanted to start my summer off with a big project, and many people recommended 
-									that I clone a popular social media website. I went with Instagram, and despite 
-									countless road bumps, bugs, and other technical issues, I successfully made a 
-									full-stack web application that functions similarly to instagram.com. I used React.js 
-									for my front end and Google Firebase as my BaaS. 
-								</p>
-								<p>
-									Although this project was fun to do, to me the idea itself was kind of boring. I thought 
-									to myself, “Instagram already exists, so in terms of functionality, what good is a clone 
-									of it?” This is where I decided to add a little twist to my project. What if I coded Instagram, 
-									but made it so that you could only upload a photo if there is a cat somewhere in the image?
-								</p>
-								<p>
-									I spent some time learning about convolutional neural networks and how I could use them for 
-									object detection. I didn't want my neural network to be a “black box,” where I just give it 
-									an input and get an output without really understanding what happened in between. I studied 
-									topics like backpropagation, Fast Fourier Transforms, and gradient descent to get a grasp on 
-									how networks learn. The model I ended up creating utilizes YOLOv5 (YOLO standing for a “You 
-									Only Look Once” algorithm) to detect if there's a cat in a given image with a 97.8% accuracy!
-								</p>
-								<p>
-									I deployed this model and connected it to my web app. If an image passes the model's test, 
-									it will post. Or else, it will tell the user that the model couldn't detect any cats in 
-									the image.  The final result is something I like to call “Catagram!”
-								</p>
-								
-								
-								<h3>Speech.ai</h3>
-								<p>
-									Two of my friends and I formed a group and competed in Rutgers University's 24-hour hackathon 
-									"HackRU S24." We decided to compete under the track of "Best AI Application Built with CloudFlare."
-								</p>
-								<p>
-									Our inspiration stemmed from a common challenge: mastering public speaking. Personally, I have 
-									always struggled with my speech, enough to the point where I attended speech therapy in the past. 
-									Drawing from personal experiences and recognizing the widespread difficulty in this domain, we set 
-									out to develop a solution.
-								</p>
-								<p>
-									Our project records audio from the user and saves it as a .mp4 file. It then analyzes the recording 
-									using Cloudflare's APIs including Speech to Text, WorkersAI, and Sentiment Analysis. The speech is 
-									then critiqued based on the number of filler phrases used, the rate at which the user is talking, 
-									grammatical errors, and the tone that the speech gives off. Lastly, speech.ai returns a score 
-									ranging from 1-100 as well as why that score was given.
-								</p>
-								<p>
-									We competed amongst 300+ students at the hackathon, and ended up placing 1st in our track! Overall, 
-									it was a great learning experience, and I can't wait for my next hackathon. 
-								</p>
-
-
-								<h3>Stop and Frisk</h3>
-								<p>
-									New York has a law called “Stop-and-Frisk” that allows police officers to “stop, interrogate and
-									 search New York City citizens on the sole basis of reasonable suspicion.” I was born in the Bronx, 
-									 and I still have family that lives there, so this topic was close to home for me. The law has been
-									  subject to more than its fair share of controversy over the years, so I decided to analyze what 
-									  was going on.
-								</p>
-								<p>
-									I got 4 datasets that describe every reported arrest NYPD made under the Stop and Frisk law from 
-									2013, 2014, 2021, and 2022. I queried each dataset with Java (had I known Python or R at the time, 
-									I probably would've used one of them instead) and tried to find common trends. Luckily, my dataset 
-									included the demographics of each person who was arrested, including race, gender, weight, and age.
-								</p>
-								<p>
-									I got some pretty interesting results; for example, I found that people of color were arrested at 
-									a much higher rate than other demographics. I also noticed that younger people are more likely to 
-									be stopped than older people.
-								</p>
-								<p>
-									This project was the first time I've ever worked with analyzing a dataset, and it forced me to 
-									learn new search algorithms to optimize my code. In fact, this project is what got me interested
-									 in the field of data science, and I'm glad I did it. Not only did I learn new tricks in the realm 
-									 of computer science, but I also got to apply them to a modern issue that affects people I care about.
-								</p>
-								</article>
-								
-								<!-- Thoughts -->
-									<article id="thoughts">
-										<h2 class="major">Thoughts</h2>
-										<span class="image main"><img src="images/Socrates_Thinking.jpg" alt="" /></span>
-										<h3>Why Math?</h3>
-										<p>
-											Growing up, I always loved math, but I never really considered it as a major; 
-											I was deadset on computer science. Even during the first semester of my freshman year, 
-											I remember thinking to myself that I was going to try and complete all of my math requirements 
-											as soon as possible so that I could be done with it.
-										</p>
-										<p>
-											I tried to look back and figure out the exact moment I fell in love with higher-level 
-											mathematics, but I can't seem to find the turning point. My guess is that it was somewhere 
-											around late March when linear algebra clicked in my head. Up until that point, I was able 
-											to do all the homework and score well on my assessments, but I didn't really understand 
-											what I was doing in the grand scheme of things. I remember coming across one of 3Blue1Brown's 
-											videos on linear algebra, and the visuals made everything fall into place. So, I guess I decided 
-											to also pursue a mathematics degree when I understood what linear algebra was.
-										</p>
-										<p>
-											If you were to ask me in person, “Why are you a math major?”, I'd probably say something like
-											 “I don't know. It's cool, math is really nice.” In reality, my career goals can be mostly 
-											 summed up in one sentence: I want to do cool things with cool people. In my opinion, 
-											 learning the language that is math will help achieve that goal, as you can do some pretty cool
-											  things with math.
-										</p>
-									</article>
-
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-							</article>
-
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
-
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
+				<section>
+					<h3 class="major">Text</h3>
+					<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is
+						<em>emphasized</em>.
+						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a
+							href="#">this is a link</a>.</p>
+					<hr />
+					<h2>Heading Level 2</h2>
+					<h3>Heading Level 3</h3>
+					<h4>Heading Level 4</h4>
+					<h5>Heading Level 5</h5>
+					<h6>Heading Level 6</h6>
+					<hr />
+					<h4>Blockquote</h4>
+					<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus
+						euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis
+						iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem
+						ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+					<h4>Preformatted</h4>
+					<pre><code>i = 0;
 
 while (!deck.isInOrder()) {
     print 'Iteration ' + i;
@@ -226,232 +246,235 @@ while (!deck.isInOrder()) {
 }
 
 print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
+				</section>
 
-								<section>
-									<h3 class="major">Lists</h3>
+				<section>
+					<h3 class="major">Lists</h3>
 
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+					<h4>Unordered</h4>
+					<ul>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Sagittis adipiscing.</li>
+						<li>Felis enim feugiat.</li>
+					</ul>
 
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+					<h4>Alternate</h4>
+					<ul class="alt">
+						<li>Dolor pulvinar etiam.</li>
+						<li>Sagittis adipiscing.</li>
+						<li>Felis enim feugiat.</li>
+					</ul>
 
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
+					<h4>Ordered</h4>
+					<ol>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Etiam vel felis viverra.</li>
+						<li>Felis enim feugiat.</li>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Etiam vel felis lorem.</li>
+						<li>Felis enim et feugiat.</li>
+					</ol>
+					<h4>Icons</h4>
 
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
+					<h4>Actions</h4>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Default</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+					<ul class="actions stacked">
+						<li><a href="#" class="button primary">Default</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+				</section>
 
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
-
+				<section>
+					<h3 class="major">Table</h3>
+					<h4>Default</h4>
+					<div class="table-wrapper">
+						<table>
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Item One</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Two</td>
+									<td>Vis ac commodo adipiscing arcu aliquet.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Three</td>
+									<td> Morbi faucibus arcu accumsan lorem.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Four</td>
+									<td>Vitae integer tempus condimentum.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Five</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>100.00</td>
+								</tr>
+							</tfoot>
+						</table>
 					</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+					<h4>Alternate</h4>
+					<div class="table-wrapper">
+						<table class="alt">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Item One</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Two</td>
+									<td>Vis ac commodo adipiscing arcu aliquet.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Three</td>
+									<td> Morbi faucibus arcu accumsan lorem.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Four</td>
+									<td>Vitae integer tempus condimentum.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Five</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>100.00</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</section>
 
-			</div>
+				<section>
+					<h3 class="major">Buttons</h3>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Primary</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+					<ul class="actions">
+						<li><a href="#" class="button">Default</a></li>
+						<li><a href="#" class="button small">Small</a></li>
+					</ul>
+					<ul class="actions">
+						<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+						<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+					</ul>
+					<ul class="actions">
+						<li><span class="button primary disabled">Disabled</span></li>
+						<li><span class="button disabled">Disabled</span></li>
+					</ul>
+				</section>
 
-		<!-- BG -->
-			<div id="bg"></div>
+				<section>
+					<h3 class="major">Form</h3>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<label for="demo-name">Name</label>
+								<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+							</div>
+							<div class="field half">
+								<label for="demo-email">Email</label>
+								<input type="email" name="demo-email" id="demo-email" value=""
+									placeholder="jane@untitled.tld" />
+							</div>
+							<div class="field">
+								<label for="demo-category">Category</label>
+								<select name="demo-category" id="demo-category">
+									<option value="">-</option>
+									<option value="1">Manufacturing</option>
+									<option value="1">Shipping</option>
+									<option value="1">Administration</option>
+									<option value="1">Human Resources</option>
+								</select>
+							</div>
+							<div class="field half">
+								<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+								<label for="demo-priority-low">Low</label>
+							</div>
+							<div class="field half">
+								<input type="radio" id="demo-priority-high" name="demo-priority">
+								<label for="demo-priority-high">High</label>
+							</div>
+							<div class="field half">
+								<input type="checkbox" id="demo-copy" name="demo-copy">
+								<label for="demo-copy">Email me a copy</label>
+							</div>
+							<div class="field half">
+								<input type="checkbox" id="demo-human" name="demo-human" checked>
+								<label for="demo-human">Not a robot</label>
+							</div>
+							<div class="field">
+								<label for="demo-message">Message</label>
+								<textarea name="demo-message" id="demo-message" placeholder="Enter your message"
+									rows="6"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Reset" /></li>
+						</ul>
+					</form>
+				</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			</article>
 
-	</body>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+		</footer>
+
+	</div>
+
+	<!-- BG -->
+	<div id="bg"></div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
